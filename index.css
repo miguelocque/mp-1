@@ -5,7 +5,7 @@
 
 #page-wrapper{
     width: 80vw;
-    background-color: darkolivegreen;
+    background-color: #7AB2B2;
     margin: 0 auto;
 }
 
@@ -16,18 +16,107 @@
 }
 
 main{
-    height: 100vw;
+    height: 200vh;
     width: 70%;
     text-align: center;
-    font-size: calc(2px + 1.7vw);
+    font-size: calc(2px + 1.5vw);
 }
 
 main *{
     margin: 2% 0;
 }
 
+/* Specifications for the styling for the projects page*/
+#projects-main{
+    height: auto;
+}
+
+#nav-password-manager{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #7AB2B2;
+}
+
+#nav-password-manager li{
+    border: none;
+}
+
+#nav-password-manager ul{
+    padding: 0;
+    list-style: circle;
+}
+
+#nav-upm{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #7AB2B2;
+}
+
+#nav-upm li{
+    border: none;
+}
+
+#nav-upm ul{
+    padding: 0;
+    list-style: circle;
+}
+
+#nav-petTrackr{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #7AB2B2;
+}
+
+#nav-petTrackr li{
+    border: none;
+}
+
+#nav-petTrackr ul{
+    padding: 0;
+    list-style: circle;
+}
+
+/* Specifications for the NAV in the EXPERIENCE TAB */
+#nav-experience{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #7AB2B2;
+}
+#nav-experience li{
+    border: none;
+}
+
+#nav-experience ul{
+    padding: 0;
+    list-style: circle;
+}
+
+/* Specifications for the Education page NAV*/
+#nav-education{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #7AB2B2;
+}
+#nav-education li{
+    border: none;
+    align-items: center;
+}
+
+#nav-education ul{
+    padding-left: 25%;
+    padding-right: 25%;
+    list-style: circle;
+    align-items: center;
+}
+
+/* Generic NAV, intended for the nav's in all pages to get to other pages*/
 nav{
-    background-color: beige;
+    background-color: #09637E;
     width: 30%;
 }
 
@@ -37,20 +126,107 @@ nav ul{
 }
 
 nav li {
-    border: 5px solid black;
+    border: 5px solid #088395;
     width: 80%;
     margin: 5% auto;
     text-align: center;
 }
 
 nav a{
-    color: mediumaquamarine;
+    color: #EBF4F6;
     font-size: calc(2px + 2vw);
     text-decoration: none;
 }
 
 /* play around with sizing here */
-img{
-    width: 500px;
-    height: 500px;
+main img{
+    max-width: 75%;
+    margin: auto;
+    display: block;
+    padding: 2%;
+}
+
+main p{
+    line-height: 100%;
+    font-size: calc(2px + 1.5vw);
+    padding-left: 2%;
+    padding-right: 2%;
+}
+
+footer{
+    background-color: #EBF4F6;
+    color: black;
+    padding: 3%;
+    text-align: center;
+}
+
+header{
+    background-color: #EBF4F6;
+    color: black;
+    padding: 3%;
+    text-align: left;
+}
+
+footer a{
+    color: black;
+}
+
+/* this is for reducing screen size, taken from Professor */
+
+@media  screen and (max-width: 1000px) {
+    #nav-main{
+        flex-direction: column;
+    }
+
+    nav, main{
+        width: 100%;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    nav li{
+        font-size: calc(3px + 2vw);
+        width: 18%;
+        padding: 1%;
+        margin: 1%;
+    }
+
+    #nav-password-manager ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #nav-education ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    #nav-experience ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    #nav-petTrackr ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    #nav-password-manager ul{
+        flex-direction: column;
+        width: 100%;
+    }
+    #nav-upm ul{
+        flex-direction: column;
+        width: 100%;
+    }
+
+
+    header{
+        text-align: center;
+    }
+
+    main{
+        height: auto;
+    }
 }

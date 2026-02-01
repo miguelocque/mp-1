@@ -1,61 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Projects | Resume</title>
-    <link rel="stylesheet" type="text/css" href="index.css">
-</head>
-<body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Projects | Resume</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
 
-<!-- add some div tags -->
+    <!-- add some div tags -->
+        <div id="page-wrapper">
+            <header>
+                <h1> Miguel Ocque</h1>
+                <p> My Online Resume </p>
+            </header>
+            <div id="nav-main">
+                <!-- nav section of projects -->
+                <nav>
+                    <ul>
+                        <li> <a href="index.html">Home</a></li>
+                        <li> <a href="projects.html">Projects</a></li>
+                        <li> <a href="education.html"> Education</a></li>
+                        <li> <a href="experience.html"> Experience</a></li>
+                        <li> <a href="skills.html"> Technical Skills</a></li>
+                        <li> <a href="achievements.html"> Achievements</a></li>
+                    </ul>
+                </nav>
 
-<header>
-    <h1> Miguel Ocque</h1>
-    <p> My Online Resume </p>
-</header>
-<nav>
-    <ul>
-        <li> <a href="index.html">Home</a></li>
-        <li> <a href="projects.html">Projects</a></li>
-        <li> <a href="education.html"> Education</a></li>
-        <li> <a href="experience.html"> Experience</a></li>
-        <li> <a href="skills.html"> Technical Skills</a></li>
-        <li> <a href="achievements.html"> Achievements</a></li>
+                <!-- main section of projects -->
+                <main id="projects-main">
+                    <h1>Projects</h1>
 
-    </ul>
-</nav>
-<main>
-    <h1>Projects</h1>
-    <nav>
-        <ul>
-            <li><a href="#passwordManager">Password Manager</a></li>
-            <li><a href="#patientManager">Unified Patient Manager</a></li>
-            <li><a href="#petTrackr">PetTrackr</a></li>
-        </ul>
-    </nav>
+                    <h3 id="passwordManager">Password Manager</h3>
+                    <h5><a href="https://github.com/miguelocque/Password-Manager">Github Link</a></h5>
+                    <!-- explain the password manager here and include its GitHub link -->
+                    <p>My Password Manager project was an ambitious project that I took upon myself with the idea
+                        that sometimes, people have more than one potential password for a given account. Thus, I
+                        created a CLI password manager with AES-128 encryption and SHA-256 authentication to learn a little
+                        more about security measures. It utilizes a custom hash table implementation with secure file
+                        storage and PIN protection. Here are some technical details:</p>
+                    <nav id="nav-password-manager">
+                        <ul>
+                            <li>Engineered a CLI password manager with AES-128 encryption and SHA-256 hashing for secure
+                                authentication and credential storage, achieving zero plaintext exposure through 50+ simulated test
+                                entries.</li>
+                            <li>Applied modular, object-oriented design through 1,200+ lines of code to separate encryption,
+                                authentication, and file management, supporting scalability and future feature integration.</li>
 
-    <h3 id="passwordManager">Password Manager</h3>
-    <!-- explain the password manager here and include its GitHub link -->
-    <p></p>
-    <!-- include some screenshots as well -->
+                        </ul>
+                    </nav>
 
-    <h3 id="patientManager">Unified Patient Manager</h3>
-    <!-- explain the unified patient manager here and include its GitHub link -->
-    <p></p>
-    <!-- include some screenshots as well -->
+                    <h3 id="patientManager">Unified Patient Manager</h3>
+                    <h5><a href="https://github.com/rajanbilancooper/egesCS411Team">Github Link</a></h5>
+                    <!-- explain the unified patient manager here and include its GitHub link -->
+                    <p>A group project that I aided in designing and managing, the Unified Patient Manager is
+                        a secure Electronic Health Records (EHR) system built with Spring Boot featuring
+                        patient management, prescription tracking with conflict detection, and two-factor authentication.
+                        Here are some technical details:</p>
+                    <nav id="nav-upm">
+                        <ul>
+                            <li>Designed and developed a full-stack healthcare management system serving 4 user workflows with 60+
+                                REST endpoints, implementing two-factor authentication via OTP email verification and JWT-based
+                                session management for secure patient data access.</li>
+                            <li>Implemented a prescription conflict detection system validating against patient allergies and drug
+                                interactions using rule-based logic, with medical override capabilities requiring justification, applicable
+                                to medication safety verification systems.</li>
+                            <li>Led Agile development as Project Manager coordinating a 4-person team through sprint planning, code
+                                reviews, and feature integration while implementing RESTful backend architecture with controllers,
+                                services, repositories, and DTOs.</li>
+                        </ul>
+                    </nav>
+                    <!-- include some screenshots as well -->
+                    <img src="src/UPMLogin.png" alt="Unified Patient Manager's Login page">
+                    <img src="src/UPMRegistration.png" alt="Unified Patient Manager's Registration Page">
+                    <img src="src/UPMDash.png" alt="Unified Patient Manager's Dashboard Page">
 
-    <h3 id="petTrackr">PetTrackr</h3>
-    <!-- explain PetTrackr here and include its GitHub link -->
-    <p></p>
-    <!-- include some screenshots as well -->
 
-    <!-- space for JavaScript calculator -->
+                    <h3 id="petTrackr">PetTrackr</h3>
+                    <h5><a href="https://github.com/miguelocque/PetTrackr">Github Link</a></h5>
+                    <!-- explain PetTrackr here and include its GitHub link -->
+                    <p>
+                        PetTrackr was an individual project that derived inspiration from the Patient Manager. I wanted
+                        to ensure I had all the understanding of what properly architectured systems were designed,
+                        and ensured to keep myself within scope to finish this project over winter break of 2025/2026.
+                        Formally, PetTrackr is a comprehensive full-stack pet management application that helps pet owners
+                        track their pets' health, medications, feeding schedules, and veterinary appointments.
+                        Built with Spring Boot and React to demonstrate modern web development practices with emphasis
+                        on file handling and QR code generation. Here are more technical details:
+                    </p>
+                    <nav id="nav-petTrackr">
+                        <ul>
+                            <li>Engineered full-stack pet management application using Java Spring Boot and React, implementing
+                                end-to-end customer workflows including profile management, QR-Code based lost pet recovery
+                                system, and multipart file uploads with format/size validation.</li>
+                            <li>Developed RESTful API with 28 controller endpoints leveraging object-oriented design patterns and
+                                database queries with JPA for efficient data retrieval across 5 interconnected domain entities.</li>
+                            <li>Achieved 97% service layer test coverage through comprehensive JUnit and Mockito unit tests,
+                                implementing validation logic for business rules and ensuring data integrity with cascade operations.</li>
+                        </ul>
+                    </nav>
+                    <!-- include some screenshots as well -->
 
-</main>
+                    <img src="src/LoginPage.png" alt="PetTrackr's Login Page">
+                    <img src="src/PetDashboard.png" alt="PetTrackr's Dashboard Page">
+                    <img src="src/QRCodeLostPet.png" alt="PetTrackr's QR Code Emergency Page">
 
-<footer>
-    <p>All rights reserved by Miguel Ocque <a href="">Credits</a> &copy;</p>
-</footer>
 
-</body>
+                    <!-- space for JavaScript calculator -->
+
+                </main>
+            </div>
+            <footer>
+                <p>All rights reserved by Miguel Ocque <a href="">Credits</a> &copy;</p>
+            </footer>
+        </div>
+    </body>
 </html>
