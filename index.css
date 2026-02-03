@@ -114,6 +114,44 @@ main *{
     align-items: center;
 }
 
+/* Specifications for the Skills page NAV*/
+#nav-skills{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #7AB2B2;
+}
+#nav-skills li{
+    border: none;
+    align-items: center;
+}
+
+#nav-skills ul{
+    padding-left: 35%;
+    padding-right: 35%;
+    list-style: circle;
+    align-items: center;
+}
+
+/* Specifications for the Achievements page NAV*/
+#nav-achievements{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: #7AB2B2;
+}
+#nav-achievements li{
+    border: none;
+    align-items: center;
+}
+
+#nav-achievements ul{
+    padding-left: 35%;
+    padding-right: 35%;
+    list-style: circle;
+    align-items: center;
+}
+
 /* Generic NAV, intended for the nav's in all pages to get to other pages*/
 nav{
     background-color: #09637E;
@@ -189,36 +227,97 @@ footer a{
     }
 
     nav li{
-        font-size: calc(3px + 2vw);
-        width: 18%;
-        padding: 1%;
-        margin: 1%;
-    }
-
-    #nav-password-manager ul{
-        flex-direction: column;
-        width: 100%;
+        font-size: calc(2px + 1vw);
+        width: 14%;
+        padding: 0.10%;
+        margin: 0.25%;
     }
 
     #nav-education ul{
         flex-direction: column;
         width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     #nav-experience ul{
         flex-direction: column;
         width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     #nav-petTrackr ul{
         flex-direction: column;
         width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     #nav-password-manager ul{
         flex-direction: column;
         width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     #nav-upm ul{
         flex-direction: column;
         width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #nav-skills ul{
+        flex-direction: column;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #nav-achievements ul{
+        flex-direction: column;
+        width: 100%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    #nav-upm li{
+        text-align: center;
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    #nav-password-manager li{
+        text-align: center;
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    #nav-petTrackr li{
+        text-align: center;
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    #nav-experience li{
+        text-align: center;
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    #nav-education li{
+        text-align: center;
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    #nav-skills li{
+        text-align: center;
+        width: 100%;
+        margin: 2% 0;
+    }
+
+    #nav-achievements li{
+        text-align: center;
+        width: 100%;
+        margin: 2% 0;
     }
 
 
@@ -227,6 +326,10 @@ footer a{
     }
 
     main{
+        height: 150vh;
+    }
+
+    #projects-main{
         height: auto;
     }
 }
