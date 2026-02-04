@@ -31,6 +31,83 @@ main *{
     height: auto;
 }
 
+/* for the calculator class */
+.calculator {
+    max-width: 40vw;
+    margin: 2% auto;
+    padding: 3%;
+    background-color: #EBF4F6;
+    border: 5px solid #088395;
+    border-radius: 10px;
+}
+
+#calculator-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2%;
+}
+
+#calculator-inputs label{
+    font-size: calc(4px + 1.2vw);
+    font-weight: bold;
+    color: #09637E;
+    margin-bottom: 1%;
+    margin-top: 1%;
+}
+
+
+#calculator-inputs input{
+    padding: 2%;
+    font-size: calc(4px + 1.2vw);
+    border: 3px solid #7AB2B2;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 2%;
+}
+
+#calculator-buttons{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 3%;
+}
+
+/*
+width: 30%;
+    padding: 3%;
+    margin: 1%;
+    font-size: calc(4px + 1.5vw);
+    background-color: #09637E;
+    color: #EBF4F6;
+    border: 3px solid #088395;
+    font-weight: bold;*/
+#calculator-buttons button{
+    width: 35%;
+    margin: 1%;
+    font-size: calc(4px + 1.5vw);
+    background-color: #09637E;
+    color: #EBF4F6;
+    border: 3px solid #088395;
+    font-weight: bold;
+}
+
+#calculator-buttons #clear-button {
+    background-color: #7AB2B2;
+    width: 100%
+}
+
+#calculator-output{
+    margin-top: 2%;
+}
+
+#output {
+    text-align: center;
+    padding: 3%;
+    min-height: 8vh;
+    font-size: calc(6px + 2vw);
+    color: #09637E;
+    margin: 0;
+}
+
 #nav-password-manager{
     display: flex;
     flex-direction: row;
@@ -211,7 +288,7 @@ footer a{
 
 /* this is for reducing screen size, taken from Professor */
 
-@media  screen and (max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     #nav-main{
         flex-direction: column;
     }
@@ -231,6 +308,34 @@ footer a{
         width: 14%;
         padding: 0.10%;
         margin: 0.25%;
+    }
+
+    /* styling for the JS calculator when screen is smaller */
+    .calculator{
+        padding: 2%;
+        margin: 2% auto;
+        max-width: 90vw;
+    }
+
+    #calculator-buttons{
+        flex-direction: column;
+    }
+
+    #calculator-buttons button{
+        width: 100%;
+        margin: 2% 0;
+        padding: 3%;
+        font-size: calc(6px + 2vw);
+    }
+
+    #calculator-inputs input{
+        padding: 3%;
+        font-size: calc(6px + 1.5vw);
+    }
+
+    #output{
+        font-size: calc(8px + 2.5vw);
+        min-height: 10vh;
     }
 
     #nav-education ul{
