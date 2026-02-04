@@ -108,21 +108,24 @@
                     <!-- space for JavaScript calculator -->
 
                     <h3>JavaScript Calculator</h3>
-                    <div id="calculator-inputs">
-                        <label for="first-number">First Number: </label><input type="text" id="first-number">
-                        <label for="second-number">Second Number: </label><input type="text" id="second-number">
-                    </div>
+                    <div class="calculator">
+                        <div id="calculator-inputs">
+                            <label for="first-number">First Number: </label><input type="text" id="first-number">
+                            <label for="second-number">Second Number: </label><input type="text" id="second-number">
+                        </div>
 
-                    <div id="calculator-buttons">
-                        <button onclick="addition()"> + </button>
-                        <button onclick="subtraction()"> - </button>
-                        <button onclick="multiplication()"> * </button>
-                        <button onclick="division()"> / </button>
-                        <button onclick="power()"> ** </button>
-                        <button onclick="clear_boxes()"> Clear </button>
+                        <div id="calculator-buttons">
+                            <button onclick="addition()"> + </button>
+                            <button onclick="subtraction()"> - </button>
+                            <button onclick="multiplication()"> * </button>
+                            <button onclick="division()"> / </button>
+                            <button onclick="power()"> ** </button>
+                            <button id="clear-button" onclick="clear_boxes()"> CLEAR </button>
+                        </div>
+                        <div id="calculator-output">
+                            <h3 id="output"></h3>
+                        </div>
                     </div>
-
-                    <h3 id="output"></h3>
 
                 </main>
             </div>
